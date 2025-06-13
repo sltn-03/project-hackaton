@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- ICON BOXICONS -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FILE JAVASCRIPT -->
+    <script src="script.js" defer></script>
+
+    <link rel="website icon" type="png" href="image/logo.png">
+    <title>Sistem Informasi Pengaduan Online Masyarakat</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg px-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="image/logo3.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link active" href="#beranda">Beranda</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#artikel">Artikel</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#lso">Laporan Surat Online</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#po">Pengaduan Online</a> </li>
+                </ul>
+                <div>
+                    <a href="" class="btn btn-outline-dark me-2">Daftar</a>
+                    <a href="" class="btn btn-green">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button class="btn btn-green" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+        style="border-radius: 0 10px 10px 0; top: 13%; position: sticky; font-size: 20px; z-index: 10;"><i
+            class='bxr bx-menu'></i>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Fitur Aksebilitas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100" id="onoff"
+                onclick="txtSpeech()">
+                <div>Text to Speech</div>
+                <b>OFF</b>
+            </button>
+
+            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
+                <div>Dyslexia Mode</div>
+                <b>OFF</b>
+            </button>
+
+            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
+                <div>Cursor Size</div>
+                <b>x1.0</b>
+            </button>
+
+            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
+                <div>Scale</div>
+                <b>x1.0<b>
+            </button>
+        </div>
+    </div>
+
+    <section class="text-center" id="beranda">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 text-center text-md-start mb-2">
+                    <h1>Yuk, Bareng - Bareng Bikin <br>Dampak Positif!</h1>
+                    <hr class="border border-dark border-1 opacity-75 mt-4">
+                    <p class="text-secondary" style="font-size: larger;">
+                        Dengan satu klik di website ini bisa jadi <br> langkah awal untuk bantu sesama!
+                    </p>
+                    <button class="btn">Mulai Sekarang</button>
+                </div>
+                <div class="col-md-7 text-md-end">
+                    <img src="image/Project hackaton people.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>Layanan</h3>
+            <h2>Pelayanan Cerdas untuk Masyarakat Hebat</h2>
+            <p class="text-secondary" style="font-size: large;">Di SIPOLA, kami hadir untuk mendekatkan pelayanan
+                kepada Anda. Akses berita terbaru,
+                urus dokumen penting seperti Pengajuan Surat Online, dan sampaikan aspirasi Anda dalam satu platform.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                    <div class="card border-dark">
+                        <img src="" class="card-img-top" alt="GAMBAR">
+                        <div class="card-body">
+                            <h5 class="card-title">Artikel</h5>
+                            <p class="card-text text-secondary">Ikuti informasi terbaru dan kebijakan penting seputar
+                                lingkungan sekitarmu. Tetap terhubung dan jadi warga yang aktif & tahu perkembangan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark">
+                        <img src="" class="card-img-top" alt="GAMBAR">
+                        <div class="card-body">
+                            <h5 class="card-title">Layanan Surat Online</h5>
+                            <p class="card-text text-secondary">
+                                Urus surat-surat penting dari rumah saja. Fitur ini untuk mengajukan dan mencetak 
+                                surat keterangan domisili, surat pengantar RT/RW, surat izin usaha,dll, secara online.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark">
+                        <img src="" class="card-img-top" alt="GAMBAR">
+                        <div class="card-body">
+                            <h5 class="card-title">Layanan Pengaduan Online</h5>
+                            <p class="card-text text-secondary">Sampaikan keluhan atau laporan dengan cepat dan aman.
+                                SIPOLA
+                                memastikan suara masyarakat didengar dan akan ditindaklanjuti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artikel">
+        <div class="container text-center" style="justify-items: center;">
+            <h1>Berita dan Informasi</h1>
+            <p class="text-secondary" style="font-size: large;">
+                Tenang, semuanya ada disini dan sudah kami rangkum semuanya
+            </p>
+            <form action="" style="width: 80%;">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="cari"> <i class='bxr bx-search-big'
+                            style="font-weight: bold;"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Cari Informasi terbaru klik disini"
+                        aria-label="Username" aria-describedby="cari">
+                    <button class="btn btn-refresh"><i class='bxr bx-refresh-cw'></i> </button>
+                </div>
+                <div class="container">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Explicabo provident est sint, aperiam reprehenderit at!</p>
+                                    <p class="card-text"><small class="text-body-secondary"><i
+                                                class='bxr bx-clock-2'></i>
+                                            Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Explicabo provident est sint, aperiam reprehenderit at!</p>
+                                    <p class="card-text"><small class="text-body-secondary"><i
+                                                class='bxr bx-clock-2'></i>
+                                            Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Explicabo provident est sint, aperiam reprehenderit at!</p>
+                                    <p class="card-text"><small class="text-body-secondary"><i
+                                                class='bxr bx-clock-2'></i>
+                                            Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Explicabo provident est sint, aperiam reprehenderit at!</p>
+                                    <p class="card-text"><small class="text-body-secondary"><i
+                                                class='bxr bx-clock-2'></i>
+                                            Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="lso">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start">
+                    <img src="image/Project hackaton surat.png" alt="">
+                </div>
+                <div class="col-md-5 text-center text-md-start mb-2">
+                    <h1 class="mb-3">Layanan Surat Online</h1>
+                    <p class="text-secondary" style="font-size: larger;">
+                        Ajukan berbagai jenis surat secara digital dan cepat. Cukup isi formulir, kami proses, dan surat
+                        akan siap digunakan seperti surat keterangan domisili, usaha, atau pengantar RT/RW langsung dari
+                        rumah. Proses cepat, tanpa antre.
+                    </p>
+                    <button class="btn">Ajukan Surat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="running-text">
+        <p>Sampaikan Aspirasimu</p>
+        <p>Sampaikan Aspirasimu</p>
+        <p>Sampaikan Aspirasimu</p>
+        <p>Sampaikan Aspirasimu</p>
+        <p>Sampaikan Aspirasimu</p>
+    </div>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Apakah butuh bantuan lagi?</h2>
+            <h5>Tanyakan Apa Saja Pada Kami!</h5>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true" aria-controls="faq1">
+                            Siapa Saja yang bisa menggunakan SIPOLA?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>SIPOLA dapat digunakan oleh seluruh warga masyarakat yang membutuhkan layanan informasi
+                                dan administrasi dari instansi terkait.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Apakah bisa saya menerbitkan berita dan artikel?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Bisa, tetapi harus merupakan berita fakta dan bukan hoax. serta harus disetujui oleh Admin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            Apakah data saya aman apabila menggunakan layanan ini?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Ya, data Anda akan aman karena akan diproteksi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            Apakah laporan (selain surat) akan di publiskasikan?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Ya, setiap laporan akan di publikasikan terkeculai surat. Karena setiap laporan bersifat
+                                realistis dan dapat cepat ditindak lanjuti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                            Apakah informasi pada SIPOLA selalu diperbaharui?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Ya, informasi selalu diperbaharui dan selalu ter-update agar tidak ketinggalan yang ada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="po">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-2">
+                    <h1 class="mb-5">Layanan Pengaduan Masyarakat<h1>
+                            <p class="text-secondary" style="font-size: x-large;">
+                                Ayo bersama - sama menuju peradaban yang berkembang. Laporkan keluhan, saran, atau
+                                pelanggaran yang Anda temui secara mudah dan cepat!
+                            </p>
+                            <button class="btn btn-green w-50">Laporan Yuk</button>
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <img src="image/Project hackaton laporan.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="group-toup">
+        <a href="#beranda" class="btn toup"> <i class='bxr bx-chevron-up'></i> </a>
+    </div>
+
+    <footer class="text-black py-4">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">SIPOLA</h5>
+                    <p class="mb-0">Satu Klik Satu Tindakan</p>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-2">
+                            <a href="#" class="text-black text-decoration-none">Beranda</a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-2">
+                            <a href="#" class="text-black text-decoration-none">Artikel</a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-2">
+                            <a href="#" class="text-black text-decoration-none">Layanan Surat Online</a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-2">
+                            <a href="#" class="text-black text-decoration-none">Laporan Online</a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-2">
+                            <a href="#" class="text-black text-decoration-none">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border border-dark border-1 opacity-75 mt-4">
+        </div>
+    </footer>
+</body>
+
+</html>
