@@ -1,0 +1,171 @@
+body {
+    background-color: #c5ff75;
+}
+
+h1{
+    position: relative;
+    left: 58rem;
+    top: 190px;
+    z-index: 999;
+}
+.background {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    right: -250px;
+    bottom: -40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.background .orang {
+    position: relative;
+    right: -560px;
+    bottom: -190px;
+    width: 340px;
+    height: 40px;
+    border: solid 3px black;
+}
+
+.background .orang2 {
+    position: relative;
+    right: -550px;
+    bottom: -200px;
+    width: 340px;
+    height: 40px;
+    border: solid 3px black;
+}
+
+.background .orang3 {
+    position: relative;
+    right: -550px;
+    bottom: -220px;
+    width: 340px;
+    height: 40px;
+    border: solid 3px black;
+}
+
+.background .orang4 {
+    position: relative;
+    right: -550px;
+    bottom: -240px;
+    width: 340px;
+    height: 40px;
+    border: solid 3px black;
+}
+
+
+.orang {
+    height: 30px;
+}
+
+.orang[type="text"] {
+    padding-left: 45px;
+}
+
+.orang2[type="text"] {
+    padding-left: 45px;
+}
+
+.orang3[type="Password"] {
+    padding-left: 45px;
+}
+
+.orang4[type="Password"] {
+    padding-left: 45px;
+}
+
+svg {
+    position: relative;
+    right: -245px;
+    z-index: 99;
+    bottom: -165px;
+}
+
+.ikon1 {
+    position: relative;
+    left: -187px;
+    top: 188px;
+}
+
+.ikon2 {
+    position: relative;
+    left: 145px;
+    top: -107px;
+}
+
+.ikon3 {
+    position: relative;
+    left:135px;
+    top: -107px;
+}
+
+.Background2 {
+    position: relative;
+    top: -280px;
+    left: -300px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: #c5ff75;
+}
+.baris1{
+    position: relative;
+    right: 10px;
+}
+.baris1 i{
+    position: relative;
+    left: 170px;
+    top: 190px;
+    z-index: 999;
+}
+.baris2 i{
+    position: relative;
+    top: 200px;
+    left: 170px;
+    z-index: 999;
+}
+.baris3 i{
+    position: relative;
+    top: 220px;
+    left: 170px;
+    z-index: 999;
+}
+.baris4 i{
+    position: relative;
+    top: 240px;
+    left: 170px;
+    z-index: 999;
+}
+.btn-dftr{
+    position: relative;
+    top: 20rem;
+    left: 40rem;
+    z-index: 999;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c5ff75;
+    border-radius: 50px;
+}
+.Background2 h2{
+    text-align: center;
+    position: relative;
+    top: 15rem;
+    left: 10rem;
+    z-index: 999;
+}
+.btn-login{
+    position: relative;
+    top: 18rem;
+    left: 28rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c5ff75;
+    border-radius: 50px;
+    z-index: 999;
+    width: 200px;
+    height: 50px;
+}
