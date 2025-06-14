@@ -1,0 +1,160 @@
+body {
+    background-color: #c5ff75;
+}
+
+.Background-Utama {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    right: -250px;
+    bottom: -40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.Background-Utama h1 {
+    position: relative;
+    right: -200px;
+    bottom: -80px;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Background-Utama p {
+    position: relative;
+    right: -120px;
+    bottom: -65px;
+    font-size: 25px;
+}
+
+.Background-Utama .user {
+    position: relative;
+    right: -70px;
+    bottom: -70px;
+    width: 340px;
+    height: 30px;
+    border: solid 3px black;
+}
+
+.Background-Utama .user[type="text"] {
+    padding: 7px;
+    padding-left: 45px;
+}
+
+.Background-Utama .pass {
+    position: relative;
+    right: 345px;
+    bottom: -140px;
+    width: 340px;
+    height: 30px;
+    border: solid 3px black;
+}
+
+.Background-Utama .pass[type="password"] {
+    padding: 7px;
+    padding-left: 45px;
+}
+svg {
+    position: relative;
+    left: -310px;
+    bottom: -75px;
+}
+
+.dua {
+    position: relative;
+    left: -725px;
+    bottom: -140px;
+}
+
+.klik2 {
+    position: relative;
+    left: -200px;
+}
+
+.Background-Utama .klik2 {
+    position: relative;
+    left: -640px;
+    bottom: -199px;
+    width: 15px;
+    height: 15px;
+}
+
+h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    right: -225px;
+    bottom: -137px;
+}
+
+button {
+    position: relative;
+    right: -180px;
+    bottom: -150px;
+    width: 180px;
+    height: 40px;
+    background-color: #5fc468;
+    border-radius: 20px;
+}
+
+button a{
+    color: white;
+    cursor: pointer;
+}
+
+.Background-Utama2 {
+    position: relative;
+    right: -530px;
+    top: -360px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #c5ff75;
+}
+
+.Background-Utama2 h1 {
+    position: relative;
+    left: 140px;
+    bottom: -155px;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Background-Utama2 p {
+    position: relative;
+    bottom: -160px;
+    left: 120px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Background-Utama2 a {
+    position: relative;
+    bottom: -150px;
+    left: 105px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Background-Utama2 .tombol{
+    top: 190px;
+    width: 180px;
+    height: 40px;
+    opacity: 1;
+    z-index: 99;
+    padding: 10px;
+    text-decoration: none;
+}
+.klik{
+    position: relative;
+    top: 190px;
+    right: -200px;
+    width: 180px;
+    height: 40px;
+    opacity: 1;
+    z-index: 99;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #5fc468;
+}
