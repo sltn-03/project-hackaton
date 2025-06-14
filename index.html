@@ -11,10 +11,11 @@
     <!-- ICON BOXICONS -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <!-- FILE CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- FILE JAVASCRIPT -->
     <script src="script.js" defer></script>
-
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="website icon" type="png" href="image/logo.png">
     <title>Sistem Informasi Pengaduan Online Masyarakat</title>
 </head>
@@ -31,13 +32,12 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"> <a class="nav-link active" href="#beranda">Beranda</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#artikel">Artikel</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#lso">Laporan Surat Online</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#po">Pengaduan Online</a> </li>
                 </ul>
                 <div>
-                    <a href="" class="btn btn-outline-dark me-2">Daftar</a>
-                    <a href="" class="btn btn-green">Masuk</a>
+                    <a href="register.html" class="btn btn-outline-dark me-2">Daftar</a>
+                    <a href="login.html" class="btn btn-green">Masuk</a>
                 </div>
             </div>
         </div>
@@ -45,8 +45,8 @@
 
     <button class="btn btn-green" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
         aria-controls="offcanvasWithBothOptions"
-        style="border-radius: 0 10px 10px 0; top: 13%; position: sticky; font-size: 20px; z-index: 10;"><i
-            class='bxr bx-menu'></i>
+        style="border-radius: 0 10px 10px 0; top: 13%; position: sticky; font-size: 30px; z-index: 10;">
+        <i class='bxr bx-universal-access'></i>
     </button>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -56,41 +56,38 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100" id="onoff"
-                onclick="txtSpeech()">
-                <div>Text to Speech</div>
-                <b>OFF</b>
-            </button>
+            <label for="klik" id="hias">Text to Speech</label>
+            <input onclick="Disabilitas()" type="checkbox" id="klik">
 
-            <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
+            <!-- <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
                 <div>Dyslexia Mode</div>
-                <b>OFF</b>
             </button>
 
             <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
                 <div>Cursor Size</div>
-                <b>x1.0</b>
             </button>
 
             <button class="btn btn-aksebilitas mb-2 d-flex justify-content-between align-items-center w-100">
                 <div>Scale</div>
-                <b>x1.0<b>
-            </button>
+            </button> -->
         </div>
     </div>
 
     <section class="text-center" id="beranda">
         <div class="container">
             <div class="row">
+                <div class="col-md-7 text-md-start img1">
+                    <img src="image/Project hackaton people.png" alt="">
+                </div>
                 <div class="col-md-5 text-center text-md-start mb-2">
-                    <h1>Yuk, Bareng - Bareng Bikin <br>Dampak Positif!</h1>
+                    <h1 class="judul">Yuk, Bareng - Bareng Bikin <br>Dampak Positif!</h1>
                     <hr class="border border-dark border-1 opacity-75 mt-4">
                     <p class="text-secondary" style="font-size: larger;">
                         Dengan satu klik di website ini bisa jadi <br> langkah awal untuk bantu sesama!
                     </p>
                     <button class="btn">Mulai Sekarang</button>
                 </div>
-                <div class="col-md-7 text-md-end">
+                <div class="col-md-7 text-md-end img2">
                     <img src="image/Project hackaton people.png" alt="">
                 </div>
             </div>
@@ -106,10 +103,11 @@
                 urus dokumen penting seperti Pengajuan Surat Online, dan sampaikan aspirasi Anda dalam satu platform.
             </p>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 crd">
                 <div class="col">
                     <div class="card border-dark">
-                        <img src="" class="card-img-top" alt="GAMBAR">
+                        <img src="image/Ikon artikel.png" class="card-img-top w-50" alt="GAMBAR"
+                            style="margin-left: 25%;">
                         <div class="card-body">
                             <h5 class="card-title">Artikel</h5>
                             <p class="card-text text-secondary">Ikuti informasi terbaru dan kebijakan penting seputar
@@ -117,20 +115,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card border-dark">
-                        <img src="" class="card-img-top" alt="GAMBAR">
-                        <div class="card-body">
-                            <h5 class="card-title">Layanan Surat Online</h5>
-                            <p class="card-text text-secondary">
-                                Urus surat-surat penting dari rumah saja. Fitur ini untuk mengajukan dan mencetak 
-                                surat keterangan domisili, surat pengantar RT/RW, surat izin usaha,dll, secara online.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-dark">
-                        <img src="" class="card-img-top" alt="GAMBAR">
+                        <img src="image/ikon pengaduan.png" class="card-img-center w-50" alt="GAMBAR"
+                            style="margin-left: 25%;">
                         <div class="card-body">
                             <h5 class="card-title">Layanan Pengaduan Online</h5>
                             <p class="card-text text-secondary">Sampaikan keluhan atau laporan dengan cepat dan aman.
@@ -149,12 +138,12 @@
             <p class="text-secondary" style="font-size: large;">
                 Tenang, semuanya ada disini dan sudah kami rangkum semuanya
             </p>
-            <form action="" style="width: 80%;">
+            <form action="">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="cari"> <i class='bxr bx-search-big'
                             style="font-weight: bold;"></i>
                     </span>
-                    <input type="text" class="form-control" placeholder="Cari Informasi terbaru klik disini"
+                    <input type="text" id="search" class="form-control" placeholder="Cari Informasi terbaru klik disini"
                         aria-label="Username" aria-describedby="cari">
                     <button class="btn btn-refresh"><i class='bxr bx-refresh-cw'></i> </button>
                 </div>
@@ -162,7 +151,8 @@
                     <div class="card mb-3 border-0">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                                <img src="image/jembatan mahakam kecil.jpg" class="img-fluid rounded-start w-50"
+                                    alt="GAMBAR">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body text-start">
@@ -180,7 +170,8 @@
                     <div class="card mb-3 border-0">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                                <img src="image/jembatan mahakam kecil.jpg" class="img-fluid rounded-start w-50"
+                                    alt="GAMBAR">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body text-start">
@@ -198,7 +189,7 @@
                     <div class="card mb-3 border-0">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                                <img src="image/jembatan mahakam.jpg" class="img-fluid rounded-start w-50" alt="GAMBAR">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body text-start">
@@ -216,7 +207,7 @@
                     <div class="card mb-3 border-0">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="" class="img-fluid rounded-start" alt="GAMBAR">
+                                <img src="image/jembatan mahakam.jpg" class="img-fluid rounded-start w-50" alt="GAMBAR">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body text-start">
@@ -232,25 +223,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </section>
-
-    <section id="lso">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-md-start">
-                    <img src="image/Project hackaton surat.png" alt="">
-                </div>
-                <div class="col-md-5 text-center text-md-start mb-2">
-                    <h1 class="mb-3">Layanan Surat Online</h1>
-                    <p class="text-secondary" style="font-size: larger;">
-                        Ajukan berbagai jenis surat secara digital dan cepat. Cukup isi formulir, kami proses, dan surat
-                        akan siap digunakan seperti surat keterangan domisili, usaha, atau pengantar RT/RW langsung dari
-                        rumah. Proses cepat, tanpa antre.
-                    </p>
-                    <button class="btn">Ajukan Surat</button>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -291,7 +263,8 @@
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Bisa, tetapi harus merupakan berita fakta dan bukan hoax. serta harus disetujui oleh Admin.</p>
+                            <p>Bisa, tetapi harus merupakan berita fakta dan bukan hoax. serta harus disetujui oleh
+                                Admin.</p>
                         </div>
                     </div>
                 </div>
@@ -350,7 +323,7 @@
                                 Ayo bersama - sama menuju peradaban yang berkembang. Laporkan keluhan, saran, atau
                                 pelanggaran yang Anda temui secara mudah dan cepat!
                             </p>
-                            <button class="btn btn-green w-50">Laporan Yuk</button>
+                            <a href="laporan.html" class="btn btn-green w-50">Laporan Yuk</a>
                 </div>
                 <div class="col-md-5 text-md-end">
                     <img src="image/Project hackaton laporan.png" alt="">
@@ -363,7 +336,7 @@
         <a href="#beranda" class="btn toup"> <i class='bxr bx-chevron-up'></i> </a>
     </div>
 
-    <footer class="text-black py-4">
+    <footer class="text-black py-4 text-center">
         <div class="container">
             <div class="row align-items-start">
                 <div class="col-md-4 mb-3">
@@ -374,19 +347,19 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-6 col-md-3 mb-2">
-                            <a href="#" class="text-black text-decoration-none">Beranda</a>
+                            <a href="#beranda" class="text-black text-decoration-none">Beranda</a>
                         </div>
                         <div class="col-6 col-md-3 mb-2">
-                            <a href="#" class="text-black text-decoration-none">Artikel</a>
+                            <a href="#artikel" class="text-black text-decoration-none">Artikel</a>
                         </div>
                         <div class="col-6 col-md-3 mb-2">
-                            <a href="#" class="text-black text-decoration-none">Layanan Surat Online</a>
+                            <a href="#lso" class="text-black text-decoration-none">Layanan Surat Online</a>
                         </div>
                         <div class="col-6 col-md-3 mb-2">
-                            <a href="#" class="text-black text-decoration-none">Laporan Online</a>
+                            <a href="#lo" class="text-black text-decoration-none">Laporan Online</a>
                         </div>
                         <div class="col-6 col-md-3 mb-2">
-                            <a href="#" class="text-black text-decoration-none">FAQ</a>
+                            <a href="#faq" class="text-black text-decoration-none">FAQ</a>
                         </div>
                     </div>
                 </div>
@@ -397,5 +370,15 @@
         </div>
     </footer>
 </body>
+<script>
+    ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 1000,
+        delay: 400
+    });
+
+    ScrollReveal().reveal('h1', { delay: 500, origin: 'left' });
+</script>
 
 </html>
