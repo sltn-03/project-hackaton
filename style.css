@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'sf-pro-display-b';
-    src: url(font/sf-pro-display/SF-Pro-Display-Bold.otf);
+    src: url(/font/sf-pro-display/SF-Pro-Display-Bold.otf);
 }
 @font-face {
     font-family: 'sf-pro-display-md';
-    src: url(font/sf-pro-display/SF-Pro-Display-Medium.otf);
+    src: url(/font/sf-pro-display/SF-Pro-Display-Medium.otf);
 }
 
 :root{
@@ -29,9 +29,17 @@ section{
 }
 nav{
     background-color: white;
+    box-shadow: 0 0 10px var(--clr-dark);
 }
-.navbar-brand > img{
+.navbar-brand img{
     width: 10rem;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
 }
 .nav-link{
     font-weight: 500;
@@ -56,6 +64,9 @@ nav{
     .nav-link.active::before{
         width: 100%;
         visibility: visible;
+    }
+    .crd{
+        margin-left: 20%;
     }
 }
 .btn-aksebilitas:hover{
@@ -99,8 +110,17 @@ nav{
 .card i{
     transform: translateY(2px);
 }
+.img1{
+    display: none;
+}
 @media (max-width: 990px) {
     #artikel .card img{
+        display: none;
+    }
+    .img1{
+        display: block;
+    }
+    .img2{
         display: none;
     }
 }
@@ -115,7 +135,6 @@ nav{
     background-color: var(--clr-blue-light);
     color: white;
     padding: 6px;
-    font-weight: 500;
 }
 .running-text p{
     margin-top: 10px;
