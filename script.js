@@ -17,18 +17,34 @@ window.onscroll = () => {
     });
 }
 
-// function txtSpeech(){
-//     const btxt = document.querySelector("b");
-//     const button = document.getElementById("onoff");
-//     let is_on = true;
 
-//     button.addEventListener("click", () => {
-//         if (is_on =){
-//             btxt.textContent = "ON";
-//             is_on = false;
-//         } else{
-//             btxt.textContent = "OFF";
-//             is_on =  true;
-//         }
-//     })
-// }
+
+function Disabilitas() {
+    const button = document.getElementById("klik");
+
+    if (button.checked) {
+        document.addEventListener('mouseup', () => {
+            const selectedText = window.getSelection().toString().trim();
+            if (selectedText) {
+                const utterance = new SpeechSynthesisUtterance(selectedText);
+                utterance.lang = 'id-ID';
+                window.speechSynthesis.speak(utterance);
+            }
+        });
+    } else {
+        window.speechSynthesis.cancel();
+    }
+    setInterval(Disabilitas, 7000)
+}
+
+const cari = document.getElementById("search");
+
+cari.addEventListener(function() {
+    const keyword = document.Value.toLowerCase();
+    const barang = this.querySelectorAll("ul li");
+
+    for (let item of barang) {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(keyword) ? "" : "none";
+    }
+}) 
