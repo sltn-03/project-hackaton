@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'sf-pro-display-b';
+    src: url(/font/sf-pro-display/SF-Pro-Display-Bold.otf);
+}
+@font-face {
+    font-family: 'sf-pro-display-md';
+    src: url(/font/sf-pro-display/SF-Pro-Display-Medium.otf);
+}
+
+:root{
+    --clr-primary: #C5FF75;
+    --clr-dark: #121212;
+    --clr-gray: #818181;
+    --clr-blue: #92B8FF;
+    --clr-blue-light: #0988FF;
+    --font-bold : 'sf-pro-display-b';
+    --font-medium : 'sf-pro-display-md';
+    --clr-green-dark: #5FC468;
+    --clr-green-light: #B2DC78;
+}
+body{
+    font-family: var(--font-medium);
+}
+.ats{
+    background-color: var(--clr-primary);
+    border-bottom: 3px solid var(--clr-dark);
+}
+.input-group{
+    /* border: 2px solid var(--clr-dark); */
+    height: 50px;
+}
+.input-group-text{
+    background-color: transparent;
+    color: var(--clr-gray);
+}
+.btn-kirim{
+    border: 2px solid var(--clr-dark);
+    background-color: var(--clr-primary);
+    border-radius: 50px;
+    width: 30%;
+}
+.btn-kirim:hover{
+    background-color: var(--clr-dark);
+    color: white;
+}
